@@ -1,10 +1,21 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// SECTION - Intialize Database
+const db = require('./models');
+
+
 // SECTION - Middleware
+
+// Serve Public Assets
 app.use(express.static(`${__dirname}/public`));
+
+// BodyParser
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 
 // SECTION - Routes
