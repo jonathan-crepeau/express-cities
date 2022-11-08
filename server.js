@@ -14,6 +14,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/homepage.html'));
 });
 
+// List of All Cities
+app.get('/cities', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/allCities.html'));
+});
+
 
 // SECTION - Start Server
 app.listen(PORT, () => {

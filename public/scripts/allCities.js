@@ -1,0 +1,1 @@
+console.log('allCities.js ready to go...');
