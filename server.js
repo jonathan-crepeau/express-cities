@@ -11,7 +11,7 @@ app.use(express.static(`${__dirname}/public`));
 
 // Homepage
 app.get('/', (req, res) => {
-    res.send('The homepage.');
+    res.sendFile(path.join(__dirname, '/views/homepage.html'));
 });
 
 
