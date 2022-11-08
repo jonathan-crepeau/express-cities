@@ -1,0 +1,1 @@
+console.log('newCity.js ready to go...');

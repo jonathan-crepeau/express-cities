@@ -19,6 +19,11 @@ app.get('/cities', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/allCities.html'));
 });
 
+// Add New City
+app.get('/cities/new', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/newCity.html'));
+});
+
 
 // SECTION - Start Server
 app.listen(PORT, () => {
